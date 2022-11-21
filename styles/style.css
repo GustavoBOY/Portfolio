@@ -1,0 +1,82 @@
+/*INICIO CONFIGURAÇÕES UNIVERSAIS*/
+:root{
+    --cor-texto:#0a0a0a;
+    --cor-sidebar: #e2e2e2;
+    --cor-conteudo:black;
+    --cor-icons:rgb(255, 255, 255);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+
+.main__content{
+    display: flex;
+}
+
+/*FIM CONFIGURAÇÕES UNIVERSAIS*/
+
+
+/*INICIO CONFIGURAÇÕES CONTEÚDO*/
+.sidebar{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--cor-sidebar);
+}
+.sidebar-pos{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.img-sidebar{text-align: center; }
+.img-sidebar img{
+    width: 70%;
+    border: 8px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.menu{
+    margin: 20px 0;
+    text-align: center;
+}
+.menu a{
+    color: var(--cor-texto);
+    opacity: 0.6;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+.menu a.selected{
+    opacity: 1;
+}
+.menu a:hover{
+    color: blue;
+}
+
+
+
+.menu-habilidades h3{
+    margin: 20px;
+    text-align: center;
+    color: var(--cor-texto);
+    opacity: 0.8;
+}
+
+.menu-habilidades{
+    margin: 25px;
+    padding: 20px;
+    position: relative;
+    display: block;
+    border: none;
+}
+.menu-habilidades progress{
+    height: 25px;
+}
